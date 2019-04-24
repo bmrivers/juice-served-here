@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    padding: 0px;
+}
+
+h1 {
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+header {
+    height: 120px;
+}
+
+body * {
+    font-family: 'DIN Pro', sans-serif;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: rgb(235 89 68);
+    width: 50px;
+} 
+ul {
+    list-style: none;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+nav {
+    padding: 0px 20px;
+    letter-spacing: 0.05em;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer nav {
+    height: 250px;
+    border-top: 1px solid lightgray;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer nav input {
+    padding: 10px;
+    width: 250px;
+    font-size: 14px;
+}
+
+#small {
+    padding: 11px 30px;
+    margin-left: 10px;
+}
+
+.footer-list {
+    line-height: 20px;
+    font-family: 'DIN Pro Light';
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+
+.footer-base {
+    height: 80px;
+    background-color: rgb(249 249 249);
+    border-top: 1px solid rgb(225 225 225);
+    color: rgb(153 148 150);
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    align-items: center;
+    padding: 0px 20px;
+    font-family: 'DIN Pro Light';
+}
+
+.footer-base a {
+    padding: 0px 20px;
+}
+
+.nav-popout {
+    position: absolute;
+    top: 33px;
+    display: none;
+}
+#shop {
+    position: relative;
+}
+
+#shop:hover  .nav-popout {
+    display: block;
+    z-index: 999;
+}
+
+#count {
+    width: 90%;
+}
+
+
+.section-1-header {
+    background:url("../images/backgrounds/teal-first-new.jpg");
+    background-color: rgb(79 196 209);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 800px;
+    height: 500px;
+    padding-left: 80px;
+    padding-top: 100px;
+}
+
+.section-2-white {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 525px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'DIN Pro Light';
+    font-size: 14px;
+    line-height: 24px;
+    padding: 50px 0px 70px 0px;
+}
+
+.section-3-drinks {
+    background-image: url("../images/backgrounds/coconut.jpeg");
+    background-color: #cccccc;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.section-5-cleanse {
+    background-image: url("../images/backgrounds/beach-towel.jpeg");
+    background-color: #cccccc;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+#banner {
+    font-size: 12px;
+    background-color: rgb(26 24 24);
+    color: white;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.03em;
+    padding: 10px 10px;
+}
+
+#banner a {
+    font-family: 'DIN Pro Medium';
+    text-decoration: underline;
+    color: white;
+}
+
+.button-thick {
+    background-color: rgb(235 89 68);
+    padding: 15px 40px;
+    font-family: 'DIN Pro Medium';
+    color: white;
+    font-size: 14px;
+    border: 1px solid rgb(235 89 68);
+}
+
+.button-light {
+    border: 1px solid rgb(235 89 68);
+    padding: 15px 40px;
+    font-family: 'DIN Pro Medium';
+    color: rgb(235 89 68);
+    font-size: 14px;
+    background: none;
+}
+
+.button-light:hover {
+    background-color: rgb(235 89 68);
+    padding: 15px 40px;
+    font-family: 'DIN Pro Medium';
+    color: white;
+    font-size: 14px;
+    border: 1px solid rgb(235 89 68);
+}
+
+.flex-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.juice-img {
+    width: 200px;
+    display: block;
+}
+
+.juice-img:hover {
+    opacity: 0.8;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.text-for-hover-box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+    border: 1px solid rgb(235 89 68);
+}
+
+.text-for-hover {
+    color: rgb(235 89 68);
+    font-size: 12px;
+    font-family:'DIN Pro Medium';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img-wrapper:hover .text-for-hover-box {
+    opacity: 0.9;
+}
+
+@media only screen and (min-width: 960px) {
+    body, html {
+        height: 100%;
+    }
+      
+    #shop:hover + .nav-popout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid lightgray;
+        background-color: white;
+        padding-left: 100px;
+    }
+    
+    .nav-popout {
+        display: none;
+    }
+    
+    .nav-popout img {
+        position: flex-end;
+        clip: rect(0px,269px,269px,0px);
+    }
+
+    .section-3-drinks {
+        background-size: cover;
+    }
+
+    .title {
+        text-align: center;
+    }
+    
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid lightgray;
+        padding: 10px;
+    }
+    
+    .main-nav-min > a {
+        padding: 10px;
+    }
+    
+    .hidden-div {
+        display: none;
+    }
+}
